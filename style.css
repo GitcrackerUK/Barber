@@ -76,3 +76,8 @@ body{
 #menu li:hover{
   color:#d29a74;
 }
+/* carousel */
+#carousel{
+  height: 482px;
+  width: 800px;
+}
