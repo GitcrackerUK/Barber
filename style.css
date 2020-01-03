@@ -1,4 +1,51 @@
 body{
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0px;
   padding: 0px;
+}
+/* header */
+#header{
+  margin-top: 30px;
+}
+#header .row{
+  grid-template-columns:1fr 2fr 1fr;
+  grid-template-rows: 2fr;
+  display: grid;
+  text-align: center;;
+}
+.left{
+  margin-top: 50px;
+}
+.left h5{
+  color: #d29a74;
+}
+.fa{
+  font-size: 35px;
+}
+.mid{
+  display: grid;
+  grid-gap: 5px 0px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 150px 20px 20px;
+}
+#midlogo{
+  grid-column: 6;
+  grid-row: 1/2;
+}
+.midp{
+  color: #d29a74;
+  font-weight: 700;
+  grid-column: 6;
+  grid-row: 2/3;
+}
+.midpa{
+  font-weight: 700;
+  grid-column: 6;
+  grid-row: 3;
+}
+.right{
+  margin-top: 50px;
+}
+.right h5{
+  color: #d29a74;
 }
