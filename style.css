@@ -191,3 +191,18 @@ body{
 .rightvisit li{
   list-style-type: none;
 }
+/* service.html */
+/* service/price */
+.mid{
+  display: grid;
+  grid-gap:40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+}
+.leftt , .rightt {
+  grid-gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
