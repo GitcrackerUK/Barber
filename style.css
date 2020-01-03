@@ -78,6 +78,17 @@ body{
 }
 /* carousel */
 #carousel{
-  height: 482px;
   width: 800px;
+}
+.carousel-item img{
+
+}
+/* cards */
+#midcards{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
