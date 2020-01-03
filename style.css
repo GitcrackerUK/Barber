@@ -3,6 +3,28 @@ body{
   margin: 0px;
   padding: 0px;
 }
+.btn-warning {
+    color: #b28262;
+    background-color: #d29a74;
+    border-color: #d29a74;
+}
+.text-warning {
+    color: #b28262 !important;
+}
+.btn-warning:hover {
+    color: #b28262;
+    background-color: #b28262;
+    border-color: #b28262;
+}
+.btn-warning:active {
+    background-color: #b28262 !important;
+    border-color: #b28262;
+}
+.btn-warning:visited {
+
+    background-color: #b28262 !important;
+    border-color: #b28262;
+}
 /* header */
 #header{
   margin-top: 30px;
@@ -56,7 +78,6 @@ body{
   grid-template-rows:1fr;
   margin-top:30px;
   text-transform: uppercase;
-
 }
 #menu ul{
   grid-column:2;
@@ -70,16 +91,32 @@ body{
   text-align: center;
   float: left;
 }
-#menu li:active{
+@media only screen and (max-width: 992px) {
+  #menu{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows:1fr;
+  }
+  #menu ul{
+    grid-column:1;
+    text-align: center;
+  }
+
+}
+#menu li a{
+  color:#212529;
+}
+#menu li a:active{
   color: #d29a74;
 }
-#menu li:hover{
+#menu li a:hover{
   color:#d29a74;
 }
 /* carousel */
 #carousel{
   width: 800px;
 }
+
 .carousel-item img{
 
 }
@@ -98,4 +135,59 @@ body{
     grid-template-columns:repeat(2 ,1fr);
     grid-template-rows: auto;
   }
+}
+/* stay up-to-date */
+.container, .container-lg, .container-md, .container-sm {
+  text-align: center;
+}
+.form-control{
+  margin-left:25%;
+  width: 40%;
+}
+.form-group{
+  display: flex;
+  align-items: center;
+}
+/* map */
+
+/* footer */
+#footer{
+  margin-top: 50px;
+  /* background-color: #d29a74; */
+}
+.socials a{
+  margin-left: 20px;
+  color: #d29a74;
+}
+.socials a:hover{
+  color:#b28262;
+}
+.socials a:active{
+
+}
+.credit{
+  display: grid;
+}
+.credit p{
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-transform:uppercase;
+  text-align:center;
+  white-space:pre-wrap;
+  font-size: 14px;
+}
+/* visit.html */
+/* map  */
+#map h2{
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+/*Enquires/open hours */
+#enq{
+  display: grid;
+  grid-template-columns:repeat(2 ,1fr);
+  grid-template-rows: auto;
+}
+.rightvisit li{
+  list-style-type: none;
 }
