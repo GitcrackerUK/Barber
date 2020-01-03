@@ -49,3 +49,30 @@ body{
 .right h5{
   color: #d29a74;
 }
+/* menu */
+#menu{
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-rows:1fr;
+  margin-top:30px;
+  text-transform: uppercase;
+
+}
+#menu ul{
+  grid-column:2;
+  text-align: center;
+}
+#menu li{
+  font-weight:bolder;
+  font-size: 18px;
+  margin-right:20px;
+  list-style-type: none;
+  text-align: center;
+  float: left;
+}
+#menu li:active{
+  color: #d29a74;
+}
+#menu li:hover{
+  color:#d29a74;
+}
