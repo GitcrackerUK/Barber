@@ -8,9 +8,6 @@ body{
     background-color: #d29a74;
     border-color: #d29a74;
 }
-.text-warning {
-    color: #b28262 !important;
-}
 .btn-warning:hover {
     color: #b28262;
     background-color: #b28262;
@@ -25,6 +22,10 @@ body{
     background-color: #b28262 !important;
     border-color: #b28262;
 }
+.text-warning {
+    color: #b28262 !important;
+}
+
 /* header */
 #header{
   margin-top: 30px;
@@ -74,14 +75,19 @@ body{
 /* menu */
 #menu{
   display: grid;
-  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-columns: 1fr 1fr 7fr 1fr 1fr;
   grid-template-rows:1fr;
-  margin-top:30px;
+
+  /* margin-left: 73px; */
   text-transform: uppercase;
 }
 #menu ul{
-  grid-column:2;
-  text-align: center;
+  padding-inline-start: 0px;
+  margin: 0px 0px 0px -15px;
+  grid-column:3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #menu li{
   font-weight:bolder;
@@ -94,14 +100,26 @@ body{
 @media only screen and (max-width: 992px) {
   #menu{
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr 7fr 1fr ;
+    grid-template-rows:1fr;
+    margin-left: 10px;
+  }
+  #menu ul{
+    grid-column:2;
+    text-align: center;
+  }
+}
+/* @media only screen and (max-width: 770px) {
+  #menu{
+    display: grid;
+    grid-template-columns: 400px ;
     grid-template-rows:1fr;
   }
   #menu ul{
     grid-column:1;
     text-align: center;
   }
-}
+} */
 
 
 #menu li a{
@@ -206,3 +224,5 @@ body{
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
+/* apoin.html */
+/* form */
